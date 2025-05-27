@@ -1,4 +1,10 @@
-# Python
+# ===================================================================
+# FACE RECOGNITION SYSTEM - GIT IGNORE
+# ===================================================================
+
+# ===================================================================
+# PYTHON ENVIRONMENT
+# ===================================================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,43 +25,144 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Virtual Environment
+# ===================================================================
+# VIRTUAL ENVIRONMENT
+# ===================================================================
 .venv/
 venv/
 ENV/
 env/
+.env
 
-# IDE
+# ===================================================================
+# IDE & EDITORS
+# ===================================================================
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
+.ropeproject
 
-# Jupyter Notebook
+# ===================================================================
+# JUPYTER NOTEBOOK
+# ===================================================================
 .ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
-# Logs
+# ===================================================================
+# FACE DATABASE & PERSONAL DATA
+# ===================================================================
+face_database/images/
+# Contains actual face images - should not be tracked for privacy
+face_database/face_encodings.pkl
+# Contains face encodings - personal biometric data
+face_database/face_metadata.json
+# Contains personal information
+
+# Keep structure but ignore content
+!face_database/
+!face_database/.gitkeep
+
+# ===================================================================
+# LOGS & DEBUGGING
+# ===================================================================
 *.log
 face_recognition.log
+debug.log
+error.log
+performance.log
 
-# Face Database (optional - uncomment if you don't want to track face data)
-# face_database/
-
-# Screenshots
+# ===================================================================
+# SCREENSHOTS & CAPTURES
+# ===================================================================
 screenshot_*.jpg
 screenshot_*.png
+capture_*.jpg
+capture_*.png
+test_capture_*.jpg
+demo_*.mp4
+output_*.avi
 
-# Model downloads (these can be re-downloaded)
-# models/
+# ===================================================================
+# MODEL FILES (CAN BE RE-DOWNLOADED)
+# ===================================================================
+models/*.pb
+models/*.pbtxt
+models/*.caffemodel
+models/*.prototxt
 
-# OS
+# Keep models directory structure
+!models/
+!models/.gitkeep
+!models/download_models.py
+
+# ===================================================================
+# SYSTEM FILES
+# ===================================================================
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
 
-# Backup files
+# ===================================================================
+# BACKUP & TEMPORARY FILES
+# ===================================================================
 database_backup/
+backup_*/
 *.bak
-*.tmp 
+*.tmp
+*.temp
+*~
+
+# ===================================================================
+# CUDA & GPU CACHE
+# ===================================================================
+.nv/
+*.cubin
+*.ptx
+
+# ===================================================================
+# PERFORMANCE & TESTING
+# ===================================================================
+benchmark_results/
+test_outputs/
+performance_logs/
+*.benchmark
+
+# ===================================================================
+# DOCUMENTATION BUILD
+# ===================================================================
+docs/_build/
+site/
+
+# ===================================================================
+# REQUIREMENTS BACKUP
+# ===================================================================
+requirements_backup.txt
+requirements_old.txt
+
+# ===================================================================
+# PROJECT SPECIFIC
+# ===================================================================
+# Exclude any personal configuration
+config_personal.py
+personal_settings.json
+
+# Exclude large test files
+test_videos/
+large_test_data/
+
+# ===================================================================
+# SECURITY
+# ===================================================================
+# Exclude any API keys or sensitive data
+.env
+secrets.json
+api_keys.txt
+*.key
+*.pem 

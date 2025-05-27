@@ -1,0 +1,30 @@
+{
+  "176b63ad": {
+    "name": "Khoi",
+    "description": "",
+    "image_path": "face_database\\images\\176b63ad_Khoi.jpg",
+    "added_date": "2025-05-28T00:40:16.263831",
+    "face_location": [
+      168,
+      325,
+      297,
+      196
+    ],
+    "encoding_method": "dlib_face_recognition",
+    "source": "video_frame"
+  },
+  "bd354020": {
+    "name": "Khoi",
+    "description": "tester",
+    "image_path": "face_database\\images\\bd354020_Khoi.jpg",
+    "added_date": "2025-05-28T01:03:49.499400",
+    "face_location": [
+      168,
+      296,
+      297,
+      167
+    ],
+    "encoding_method": "dlib_face_recognition",
+    "source": "video_frame"
+  }
+}

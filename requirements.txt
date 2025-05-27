@@ -1,0 +1,129 @@
+# ===================================================================
+# FACE RECOGNITION SYSTEM WITH CUDA ACCELERATION - REQUIREMENTS
+# ===================================================================
+# Generated for Python 3.13.2
+# Last updated: 2025
+# Tested on Windows 10 with CUDA 12.9 and RTX 3050
+
+# ===================================================================
+# CORE COMPUTER VISION & FACE RECOGNITION
+# ===================================================================
+opencv-python==4.11.0.86
+# Note: Using latest stable version for better performance
+# opencv-contrib-python not needed for this project
+
+face-recognition==1.3.0
+# Core face recognition library (includes dlib)
+dlib==19.24.9
+# Updated to latest version for better Python 3.13 compatibility
+
+# ===================================================================
+# DEEP LEARNING & CUDA SUPPORT  
+# ===================================================================
+torch==2.7.0+cu118
+torchvision==0.22.0+cu118
+torchaudio==2.7.0+cu118
+# CUDA 11.8 compatible versions for stable performance
+# Install with: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# ===================================================================
+# NUMERICAL COMPUTING & IMAGE PROCESSING
+# ===================================================================
+numpy==2.2.6
+# Updated to latest compatible version
+Pillow==11.2.1
+# Updated for better security and performance
+matplotlib==3.10.3
+# Updated version with better widget support
+scikit-image==0.25.2
+# Updated for latest algorithms
+
+# ===================================================================
+# JUPYTER NOTEBOOK & INTERACTIVE FEATURES
+# ===================================================================
+jupyter==1.1.1
+jupyterlab==4.4.3
+# Full Jupyter ecosystem for best development experience
+ipywidgets==8.1.7
+IPython==9.2.0
+# Core interactive computing packages
+
+# ===================================================================
+# SYSTEM MONITORING & PERFORMANCE
+# ===================================================================
+psutil==7.0.0
+# Updated for better system monitoring
+GPUtil==1.4.0
+# GPU monitoring (optional but recommended)
+tqdm==4.67.1
+# Progress bars for long operations
+
+# ===================================================================
+# DATA HANDLING & UTILITIES
+# ===================================================================
+pandas==2.2.3
+# For data analysis and logging
+requests==2.32.3
+# For model downloading
+urllib3==2.4.0
+# HTTP client
+
+# ===================================================================
+# OPTIONAL ADVANCED MODELS (COMMENT OUT IF NOT NEEDED)
+# ===================================================================
+# facenet-pytorch==2.5.3
+# MTCNN implementation for advanced face detection
+# Note: Only needed if using MTCNN detector
+
+# mtcnn==0.1.1
+# Alternative MTCNN implementation
+
+# tensorflow>=2.13.0
+# Only needed for TensorFlow-based models (not used in current version)
+
+# insightface==0.7.3
+# Advanced face recognition models (not used in current version)
+
+# ===================================================================
+# DEVELOPMENT & UTILITY LIBRARIES
+# ===================================================================
+imutils==0.5.4
+# Convenience functions for OpenCV
+
+# ===================================================================
+# INSTALLATION NOTES
+# ===================================================================
+# 1. Create virtual environment first:
+#    python -m venv .venv
+#    .venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
+#
+# 2. Install PyTorch with CUDA first:
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#
+# 3. Install remaining packages:
+#    pip install -r requirements.txt
+#
+# 4. Download face detection models:
+#    python download_models.py
+#
+# ===================================================================
+# SYSTEM REQUIREMENTS
+# ===================================================================
+# - Python 3.13+ (tested on 3.13.2)
+# - NVIDIA GPU with CUDA support (optional)
+# - 4GB+ RAM recommended  
+# - 2GB+ disk space for models and virtual environment
+#
+# ===================================================================
+# TROUBLESHOOTING
+# ===================================================================
+# If you get errors with dlib:
+# - Windows: Install Visual Studio Build Tools
+# - Linux: sudo apt-get install cmake
+# - Mac: brew install cmake
+#
+# If CUDA not working:
+# - Verify CUDA toolkit installation
+# - Check GPU compatibility  
+# - System will automatically fallback to CPU
+# =================================================================== 
